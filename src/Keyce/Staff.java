@@ -1,3 +1,5 @@
+package Keyce;
+
 public class Staff {
     String IDstaff;
     String nom;

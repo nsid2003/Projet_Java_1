@@ -1,3 +1,5 @@
+package Keyce;
+
 abstract class PetitFrere {
     public String fname = "Choupette";
     public int age = 17;
@@ -12,7 +14,7 @@ abstract class PetitFrere {
 
 }
 
-class Student extends PetitFrere{
+public class Student extends PetitFrere{
     public int graduationYear = 2018;
 
     public void obeir() {

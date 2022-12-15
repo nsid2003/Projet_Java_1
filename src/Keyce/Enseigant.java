@@ -1,3 +1,5 @@
+package Keyce;
+
 public class Enseigant {
     private String IDenseignant;
     private String nom= "Bernard";
@@ -6,9 +8,9 @@ public class Enseigant {
     private String e_mail;
     private String MatriculeEnseignants;
 
-    //Enseigant Toko = new Enseigant();
+    //Keyce.Enseigant Toko = new Keyce.Enseigant();
 
-    //Enseigant Bechir =new Enseigant();
+    //Keyce.Enseigant Bechir =new Keyce.Enseigant();
 
     public void FaireEvaluation() {
 

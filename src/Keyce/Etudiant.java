@@ -1,3 +1,5 @@
+package Keyce;
+
 import java.util.Date;
 
 public class Etudiant {
@@ -10,8 +12,8 @@ public class Etudiant {
     private Integer NumeroTelephone;
     private String Email;
 
-    //Etudiant Daryl = new Etudiant();
-    //Etudiant Aaron = new Etudiant();
+    //Keyce.Etudiant Daryl = new Keyce.Etudiant();
+    //Keyce.Etudiant Aaron = new Keyce.Etudiant();
 
     public void ParticiperCours() {
 

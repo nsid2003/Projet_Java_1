@@ -1,3 +1,9 @@
+package College;
+
+import Keyce.Enseigant;
+import Keyce.Etudiant;
+import Keyce.Student;
+
 public class Main {
     public static void main(String[] args) {
 
