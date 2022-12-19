@@ -1,9 +1,8 @@
 package College;
 
-import Keyce.Enseigant;
-import Keyce.Etudiant;
-import Keyce.Student;
-
+import Keyce.*;
+//package mypack;
+//class MyPackageClass {
 public class Main {
     public static void main(String[] args) {
 
@@ -12,19 +11,28 @@ public class Main {
 
         System.out.println("Hello world!");
 
-        Etudiant nsid = new Etudiant();
-        int x = nsid.getIDetudiant();
-        System.out.println(x);
-        nsid.setIDetudiant(2002);
-        int Y = nsid.getIDetudiant();
-        System.out.println(Y);
 
-        Enseigant daryl = new Enseigant();  // creation de l'objet daryl
-        String a = daryl.getNom();  // recupérer la valeur de la variable nom lorqu'il est déclaré en private et l'affecter dans la variable a
-        System.out.println(a); // afficher la variable qu'on a recupéré
-        daryl.setNom("Matias"); // modifier la valeur de la variable nom de la classe enseignant
-        String b = daryl.getNom(); // affectation de la nouvelle valeur dans une variable
-        System.out.println(b);  // afficher la nouvelle valeur qu'on a affecter à la variable nom de la classe enseignant
+
+        System.out.println("This is my package!");
+
+        Etudiant Daryl = new Etudiant();
+        Daryl.surfer();
+        Daryl.telephoner();
+
+        String o = Daryl.getNom();
+        System.out.println(o);
+
+        Parents ismael = new Parents(); // creation d'un objet de la classe parents
+        ismael.surfer(); // heritage des méthodes de la classe parent sur l'objet ismael
+        ismael.telephoner();
+
+        Enseigant Toko = new Enseigant(); // creation d'un objet Toko de la classe Enseignant
+        Toko.surfer();// heritage de la methode surfer sur l'objet Toko
+        Toko.telephoner();
+
+        Staff Bernard = new Staff();
+        Bernard.surfer();
+        Bernard.telephoner();
 
 
 
@@ -32,4 +40,25 @@ public class Main {
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+//}
