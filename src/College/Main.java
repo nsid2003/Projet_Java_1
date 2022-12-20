@@ -34,6 +34,18 @@ public class Main {
         Bernard.surfer();
         Bernard.telephoner();
 
+        Etudiant siewe = new Etudiant();
+        Etudiant.Programme fred = siewe.new Programme(); // creation d'un objet de la classe imbriqué
+        String n = fred.getNom();
+        System.out.println("voici le nom que recupere la variable " + n);
+
+        Pig peppa = new Pig(); // creation de l'objet peppa dans la classe pig
+        peppa.run(); //         appelation de la methode run() de l'interface animal
+        peppa.sleep();
+
+
+
+
 
 
     }

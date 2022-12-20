@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4c4a2a-1db7-4404-b7d9-80cbf49b5660" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Keyce/Personne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Keyce/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Keyce/Pig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/College/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/College/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keyce/Enseigant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keyce/Enseigant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Keyce/Etudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keyce/Etudiant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keyce/Matiere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keyce/Matiere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keyce/Parents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keyce/Parents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Keyce/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Keyce/Staff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
