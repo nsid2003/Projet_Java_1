@@ -1,9 +1,9 @@
 package College;
 
 import Keyce.*;
-
+import java.util.Scanner;
 //package mypack;
-//class MyPackageClass {
+//class MyPackagelass {
 public class Main {
     public static void main(String[] args) {
 
@@ -91,6 +91,41 @@ public class Main {
 
             System.out.println(year);
         }
+
+        // exercice : ecrire un code qui demande l'heure de depart et la duree du trajet et affiche l'heure d'arrivée
+
+        Scanner name = new Scanner(System.in); // creation d'un objet Scanner
+        System.out.println("entrer le nom de l'utilisateur : ");
+
+        // N.B : on est pas obligé de creer plusieurs objets scanner on peut creer un seul et l'utiliser
+
+        String username = name.nextLine(); //  cette ligne permet de recuperer la valeur entrée au clavier
+        System.out.println("Bienvenue M." + username); // affichage de la valeur entrée au clavier
+
+
+
+        System.out.println("veuillez entrez l'heure de depart!");
+        int recup1 =name.nextInt();
+        System.out.println("Votre depart est prévu pour :" + recup1 +"H"); // affichage de l'heure de depart
+
+
+        System.out.println("Veuillez saisir la duree du trajet");
+        int recup2 = name.nextInt();
+        System.out.println(" la duree de votre trajet est de :" + recup2+"H");
+
+        int m = recup1 + recup2 ;
+
+        if (m < 24){
+            System.out.println("vous arriverez à destination à " + m+"H");
+        }
+        if( m > 24 ){
+            int p = - ( 24 - m );
+            System.out.println("vous arriverez à destination à " +p+"H");
+        }
+
+        name.close();
+
+
 
 
     }
