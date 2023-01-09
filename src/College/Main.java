@@ -1,6 +1,7 @@
 package College;
 
 import Keyce.*;
+import org.w3c.dom.ls.LSOutput;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -130,7 +131,7 @@ public class Main {
         name.close();*/
 
         LocalDate MyObj = LocalDate.now(); // creation de l'objet Myobjet et insctantie l'objet avec la methode now()
-        System.out.println( "Aujourd'hui nous sommes le " + MyObj);
+        System.out.println("Aujourd'hui nous sommes le " + MyObj);
 
         LocalTime Myobj1 = LocalTime.now();
         System.out.println("Actuellement il est:" + Myobj1);
@@ -182,8 +183,7 @@ public class Main {
         int taille2 = Voitures.size();
         System.out.println(taille2);
 
-        for (int i = 2; i < Voitures.size(); i++)
-        {
+        for (int i = 2; i < Voitures.size(); i++) {
             System.out.println(Voitures.get(i));
         }
         String w = Voitures.get(2);
@@ -208,7 +208,7 @@ public class Main {
         System.out.println(Moto);
         Moto.removeLast();
         System.out.println(Moto);
-        String t =Moto.getFirst();
+        String t = Moto.getFirst();
         System.out.println(t);
         String e = Moto.getLast();
         System.out.println(e);
@@ -241,7 +241,7 @@ public class Main {
         System.out.println("Affichages des clés et de leurs valeurs");
         for (String i : Capitale.keySet()) // affichage fes clés
         {
-            System.out.println("key: " + i + "," + " value: " + Capitale.get(i) +"\n");
+            System.out.println("key: " + i + "," + " value: " + Capitale.get(i) + "\n");
         }
 
         HashMap<String, Integer> Personne = new HashMap<String, Integer>();
@@ -253,9 +253,8 @@ public class Main {
         Personne.put("Bosco", 22);
 
         System.out.println("Affichage des personnes et de leur age\n");
-        for (String i : Personne.keySet())
-        {
-            System.out.println("clé: " + i + "," + " valeur: " + Personne.get(i)+"\n");
+        for (String i : Personne.keySet()) {
+            System.out.println("clé: " + i + "," + " valeur: " + Personne.get(i) + "\n");
 
         }
 
@@ -268,7 +267,7 @@ public class Main {
 
         //System.out.println( Marques.contains("Nike")); // pour verifier si un élément éxiste on utilise la methode clé ".contains()"
 
-        boolean exist =  Marques.contains("Feragamo");
+        boolean exist = Marques.contains("Feragamo");
         System.out.println(exist);
 
         HashSet<Integer> Cacao = new HashSet<Integer>(); // creation d'un Hashset
@@ -277,31 +276,79 @@ public class Main {
         Cacao.add(2000);
         Cacao.add(800);
         for (int i : Cacao) {
-            System.out.println(i);}
+            System.out.println(i);
+        }
 
-        for (int i : Cacao){
-            System.out.println("Bosco a vendu : " + i + " tonnes de Cacao");}
-
-
-
-
+        for (int i : Cacao) {
+            System.out.println("Bosco a vendu : " + i + " tonnes de Cacao");
+        }
 
 
+        // pour avoir un itérateur
+        Iterator<String> it = Voitures.iterator();
+
+        // pour afficher le premier item
+
+        System.out.println(it.next());
+        // pour parcourir les éléments d'une collection avec une itération
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+        // pour supprimer les elements d'une collection avec une itération
+
+        // après avoir élaboré la collection, déclarér l'itération
+
+        Iterator<Integer> hit = Cacao.iterator();
+        while (hit.hasNext()) {
+            Integer i = hit.next(); // affectation du compteur
+            if (i > 800) {
+                hit.remove();
+            }
+        }
+
+        System.out.println(Cacao);
+
+        Integer Myint = 100;
+        Double Mydouble = 5.44;
+        Character Mycharacter = 'n';
+        System.out.println(Myint);
+        System.out.println(Mydouble);
+        System.out.println(Mycharacter);
+
+        System.out.println(Myint.intValue());
+        System.out.println(Mydouble.doubleValue());
+        System.out.println(Mycharacter.charValue());
+
+
+        String Mystring = Myint.toString();
+        System.out.println(Mystring.length());
+
+        int[] Mynbr = {1, 2, 3}; // creation du tableau
+
+        try { // permet de creer des execptions d'erreurs
+            System.out.println(Mynbr[10]);
+        } catch (Exception e1) { // cette commande permet de recuperer la ligne et d'afficher l'erreur
+            System.out.println("quelque chose ne marche pas");
+        } finally {
+            System.out.println("l'instruction try..catch est finie");
+        }
+
+        checkAge(15);
 
 
 
 
-
-
-
-
-
+    }
+    static void checkAge(int age){
+        if (age < 18) {
+            throw new ArithmeticException("accès refusé!"); // cette ligne permet de creer une erreur personnalisee
+        } else {
+            System.out.println("accès garanti!");
+        }
 
 
     }
 
 
 }
-
-
-//}
